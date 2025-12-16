@@ -24,30 +24,16 @@ public class CategoriesController {
     private ProductDao productDao;
 
     @Autowired
-    public CategoriesController(CategoryDao categoryDao){
+    public CategoriesController(CategoryDao categoryDao, ProductDao productDao)
+    {
 
         this.categoryDao = categoryDao;
-}
+        this.productDao = productDao;
+    }
     //^^^create an Autowired controller to inject the categoryDao and ProductDao
 
-//    @GetMapping("")
-//    @PreAuthorize("permitAll()")
-//    public List<Category> search(@RequestParam(name="cat", required = false) Integer categoryId,
-//                                 @RequestParam(name="minPrice", required = false) BigDecimal minPrice,
-//                                 @RequestParam(name="maxPrice", required = false) BigDecimal maxPrice,
-//                                 @RequestParam(name="subCategory", required = false) String subCategory
-//                                )
-//    {
-//        try
-//        {
-//            return categoryDao.search(categoryId, minPrice, maxPrice, subCategory);
-//        }
-//        catch(Exception ex)
-//        {
-//            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
-//        }
-//
-//        }
+    @GetMapping("")
+    @PreAuthorize("permitAll()")
     // ^^add the appropriate annotation for a get action
 
     public List<Category> getAll()
