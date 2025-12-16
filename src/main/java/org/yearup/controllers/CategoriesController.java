@@ -44,15 +44,22 @@ public class CategoriesController {
         }
         catch (Exception ex)
         {
+            //runtime exception added to signal an http error response
             throw new ResponseStatusException(
                     HttpStatus.INTERNAL_SERVER_ERROR,
-                    "ERROR WITH CATEGORY RETRIEVAL"
+                    "Error retrieving categories"
             );
         }
-        // find and return all categories
 
     }
+    // find and return all categories
 
+
+
+
+
+
+    
     // add the appropriate annotation for a get action
     public Category getById(@PathVariable int id)
     {
