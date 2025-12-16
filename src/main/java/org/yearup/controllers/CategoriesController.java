@@ -20,8 +20,8 @@ public class CategoriesController {
     private ProductDao productDao;
 
     @Autowired
-    public ProductsController(productDao productDao){
-        this.productDao = productDao;
+    public CategoriesController(CategoryDao categoryDao){
+        this.categoryDao = categoryDao;
 }
     //^^^create an Autowired controller to inject the categoryDao and ProductDao
 
