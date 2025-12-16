@@ -32,14 +32,25 @@ public class CategoriesController {
     }
     //^^^create an Autowired controller to inject the categoryDao and ProductDao
 
+    //GET category
     @GetMapping("")
     @PreAuthorize("permitAll()")
     // ^^add the appropriate annotation for a get action
-
     public List<Category> getAll()
     {
+        try
+        {
+            return categoryDao.getAll();
+        }
+        catch (Exception ex)
+        {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "ERROR WITH CATEGORY RETRIEVAL"
+            );
+        }
         // find and return all categories
-        return null;
+
     }
 
     // add the appropriate annotation for a get action
