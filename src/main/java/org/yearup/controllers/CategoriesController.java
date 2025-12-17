@@ -5,7 +5,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import org.yearup.EasyshopApplication;
 import org.yearup.data.CategoryDao;
 import org.yearup.data.ProductDao;
 import org.yearup.models.Category;
@@ -41,7 +40,7 @@ public class CategoriesController {
     {
         try
         {
-            return categoryDao.getAll();
+            return categoryDao.getAllCategories();
         }
         catch (Exception ex)
         {
@@ -95,7 +94,7 @@ public class CategoriesController {
     {
         try
         {
-            return productDao.getByCategoryId(categoryId);
+            return productDao.listByCategoryId(categoryId);
         }
         catch (Exception ex)
         {
@@ -128,7 +127,7 @@ public class CategoriesController {
         }
     }
 
-    @PutMapping("/{id")
+    @PutMapping("/{id}")
     // ^added annotation to call this method for a PUT (update) action - the url path must include the categoryId
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     // ^added annotation to ensure that only an ADMIN can call this function
@@ -196,3 +195,4 @@ public class CategoriesController {
 
     }
 }
+
