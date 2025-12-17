@@ -7,6 +7,7 @@ import org.yearup.models.Category;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -18,24 +19,25 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public List<Category> getAllCategories() throws SQLException
+    public List<Category> getAllCategories()
     {
-        String query = "select * from categories";
-        return null;
+        List<Category> categories = new ArrayList<>();
+
+        String sql = "SELECT * FROM categories";
+
     }
 
     @Override
     public Category getById(int categoryId) throws SQLException
     {
         // get category by id
-        return null;
+
     }
 
     @Override
     public Category create(Category category)
     {
         // create a new category
-        return null;
     }
 
     @Override
