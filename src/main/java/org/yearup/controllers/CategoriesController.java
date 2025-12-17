@@ -114,8 +114,18 @@ public class CategoriesController {
     //returns 201 if successful
     public Category addCategory(@RequestBody Category category)
     {
-        // insert the category
-        return null;
+        try
+        {
+            return categoryDao.create(category);
+            // ^inserts the category
+        }
+        catch (Exception ex)
+        {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "Error creating category"
+            );
+        }
     }
 
     // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
