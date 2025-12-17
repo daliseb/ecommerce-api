@@ -128,18 +128,58 @@ public class CategoriesController {
         }
     }
 
-    // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
-    // add annotation to ensure that only an ADMIN can call this function
+    @PutMapping("/{id")
+    // ^added annotation to call this method for a PUT (update) action - the url path must include the categoryId
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    // ^added annotation to ensure that only an ADMIN can call this function
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateCategory(@PathVariable int id, @RequestBody Category category)
     {
-        // update the category by id
+        try
+        {
+            Category existing = categoryDao.getById(id);
+            if (existing == null)
+            {
+                throw new ResponseStatusException(
+                        HttpStatus.NOT_FOUND,
+                        "Category not found"
+                );
+            }
+            // update the category by id
+            category.setCategoryId(id);
+            categoryDao.update(category);
+        }
+        catch (ResponseStatusException ex)
+        {
+            throw ex;
+        } catch (Exception e) {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "Error updating category"
+
+            );
+        }
+
     }
 
-
-    // add annotation to call this method for a DELETE action - the url path must include the categoryId
-    // add annotation to ensure that only an ADMIN can call this function
+    @DeleteMapping("/{id}")
+    // ^^added annotation to call this method for a DELETE action - the url path must include the categoryId
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    //^^added annotation to ensure that only an ADMIN can call this function
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCategory(@PathVariable int id)
     {
+        try
+        {
+            Category existing = categoryDao.getById(id);
+            if (exisiting == null)
+            {
+                throw new ResponseStatusException(
+                        HttpStatus.NOT_FOUND,
+                        "Category was not found"
+                );
+            }
+        }
         // delete the category by id
     }
 }

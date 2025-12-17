@@ -39,7 +39,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public void update(int categoryId, Category category)
+    public void update(Category category)
     {
         // update category
     }
