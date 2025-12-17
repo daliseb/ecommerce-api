@@ -32,7 +32,7 @@ public class CategoriesController {
     }
     //^^^create an Autowired controller to inject the categoryDao and ProductDao
 
-    //GET category
+    //GET category, users are able to access (:
     @GetMapping("")
     @PreAuthorize("permitAll()")
     // ^^add the appropriate annotation for a get action
@@ -52,20 +52,39 @@ public class CategoriesController {
         }
 
     }
-    // find and return all categories
 
-
-
-
-
-
-    
-    // add the appropriate annotation for a get action
+    //annotation for get action
+    // get the category by id
+    @GetMapping("/{id}")
     public Category getById(@PathVariable int id)
     {
-        // get the category by id
-        return null;
+        try
+        {
+            Category category = categoryDao.getById(id);
+
+            if (category == null)
+            {
+                throw new ResponseStatusException(
+                        HttpStatus.NOT_FOUND,
+                        "Category not found"
+                );
+            }
+            return category;
+        }
+        catch (ResponseStatusException ex)
+        {
+            throw ex;
+        }
+        catch (Exception ex)
+        {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "Error retrieving category"
+            );
+        }
     }
+
+    
 
     // the url to return all products in category 1 would look like this
     // https://localhost:8080/categories/1/products
