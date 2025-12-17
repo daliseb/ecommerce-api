@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import org.yearup.EasyshopApplication;
 import org.yearup.data.CategoryDao;
 import org.yearup.data.ProductDao;
 import org.yearup.models.Category;
@@ -84,19 +85,33 @@ public class CategoriesController {
         }
     }
 
-    
 
-    // the url to return all products in category 1 would look like this
-    // https://localhost:8080/categories/1/products
+
+    // the url to return all products in category 1 would look like this **I took off an "s"
+    // get a list of product by categoryId
+    // http://localhost:8080/categories/1/products
     @GetMapping("{categoryId}/products")
     public List<Product> getProductsById(@PathVariable int categoryId)
     {
-        // get a list of product by categoryId
-        return null;
+        try
+        {
+            return productDao.getByCategoryId(categoryId);
+        }
+        catch (Exception ex)
+        {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "Error retrieving products by category"
+            );
+        }
     }
 
-    // add annotation to call this method for a POST action
-    // add annotation to ensure that only an ADMIN can call this function
+    // added annotation to call this method for a POST action
+    @PostMapping("")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    // ^^added annotation to ensure that only an ADMIN can call this function
+    @ResponseStatus(HttpStatus.CREATED)
+    //returns 201 if successful
     public Category addCategory(@RequestBody Category category)
     {
         // insert the category
