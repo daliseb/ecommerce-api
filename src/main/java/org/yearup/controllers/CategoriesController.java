@@ -10,7 +10,6 @@ import org.yearup.data.ProductDao;
 import org.yearup.models.Category;
 import org.yearup.models.Product;
 
-import java.math.BigDecimal;
 import java.util.List;
 //to make this a REST controller
 @RestController
@@ -106,7 +105,7 @@ public class CategoriesController {
     }
 
     // added annotation to call this method for a POST action
-    @PostMapping("")
+    @PostMapping
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     // ^^added annotation to ensure that only an ADMIN can call this function
     @ResponseStatus(HttpStatus.CREATED)

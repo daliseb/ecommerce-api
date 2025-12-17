@@ -18,14 +18,14 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public List<Category> getAllCategories()
+    public List<Category> getAllCategories() throws SQLException
     {
-        // get all categories
+        String query = "select * from categories";
         return null;
     }
 
     @Override
-    public Category getById(int categoryId)
+    public Category getById(int categoryId) throws SQLException
     {
         // get category by id
         return null;
@@ -39,13 +39,13 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public void update(Category category)
+    public void update(Category category) throws SQLException
     {
         // update category
     }
 
     @Override
-    public void delete(int categoryId)
+    public void delete(int categoryId) throws SQLException
     {
         // delete category
     }
