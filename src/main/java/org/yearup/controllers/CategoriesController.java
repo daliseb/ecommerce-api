@@ -172,14 +172,27 @@ public class CategoriesController {
         try
         {
             Category existing = categoryDao.getById(id);
-            if (exisiting == null)
+            if (existing == null)
             {
                 throw new ResponseStatusException(
                         HttpStatus.NOT_FOUND,
                         "Category was not found"
                 );
             }
+            categoryDao.delete(id);
+            //^^ delete the category by id
         }
-        // delete the category by id
+        catch (ResponseStatusException ex)
+        {
+            throw ex;
+        }
+        catch (Exception ex)
+        {
+            throw new ResponseStatusException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "Error deleting the category"
+            );
+        }
+
     }
 }
