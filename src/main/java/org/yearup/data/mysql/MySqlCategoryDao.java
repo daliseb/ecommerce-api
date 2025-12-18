@@ -135,6 +135,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         }
     }
 
+    //mapRow works as a translator from sql to java
     private Category mapRow(ResultSet row) throws SQLException
     {
         Category category = new Category();
