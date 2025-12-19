@@ -11,6 +11,22 @@ In addition to bug fixes, I made small improvements, such as updating the header
 # Personal Goals for This Capstone
 This capstone was incredibly different from our past capstones. We were able to view the front and backend of a website/application. We did not have a lot of practice with Insomnia in class so I was excited to see first hand how the tests ran. This turned out to be my biggest challenge. My goal was to get more familiar with the testing process and act as a detective to figure out a solution. 
 
+
+# Phase 1: Core Setup & Category Functionality
+In Phase 1, I focused on understanding the existing codebase and completing the required category functionality. This included finishing the CategoriesController and implementing the MySqlCategoryDao to properly retrieve category data from the database.
+I worked on connecting the controller layer to the DAO, ensuring that category endpoints returned accurate data and followed the existing application structure. This phase helped me get comfortable navigating the project, understanding how controllers interact with DAOs, and verifying functionality through API testing.  
+
+<img width="500" height="200" alt="noticing patterns" src="https://github.com/user-attachments/assets/163a7b02-f0b1-455a-b518-9f6bdc157cc8" />
+
+Filling out the controller and DAO came to feel almost second nature, I was noticing patterns from the product controller and mirroring them in the categories controller.
+
+Phase 1 set the foundation for the rest of the capstone. Super important!!!
+
+
+<img width="1074" height="347" alt="returning null" src="https://github.com/user-attachments/assets/007fcccc-274f-4944-90b9-5e34d46dcf16" />
+
+
+
 # Key Features & Improvements
 ---Frontend Enhancement ✎𓂃 ---
 One of the things that I found the most interesting was changing the color of the website header and price. I decided to make this change because it pushed me to understand how the header was being styled and rendered within the project. I wanted to know “how”, I wanted to know where the color was coming from, I also wanted to personalize the website to feel more like something that I did. Especially since the code for this project was given to us. At first, it wasn’t obvious where the color was coming from, which required me to trace through the HTML structure and CSS rules rather than making assumptions. This change helped me better understand the project’s styling structure, including how CSS classes, layout positioning, and shared styles affect l components like the header. It also reinforced how the tiniest frontend changes often require careful navigation through multiple files, especially in an existing codebase! This was VERY cool!
@@ -22,7 +38,6 @@ One of the things that I found the most interesting was changing the color of th
 <img width="500" height="400" alt="changed the color of my logo" src="https://github.com/user-attachments/assets/65933fe1-bce9-4de9-9296-48a46c1e008d" />
 
 In the pictures above, I am showing where I modified the color of my logo/header. Its straight forward when you know where to look!
-
 
 
 
