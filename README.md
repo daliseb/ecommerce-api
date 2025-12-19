@@ -24,6 +24,35 @@ One of the things that I found the most interesting was changing the color of th
 In the pictures above, I am showing where I modified the color of my logo/header. Its straight forward when you know where to look!
 
 
+
+
+# Bug 1: Product Search / Filter Issue
+To explain the bug that was causing my product search and maximum issue, I'd like to break it up into three categories. What the problem was, the cause and solution.
+# Problem:
+ Although the search and filter values were being set correctly, the product results did not fully reflect the selected filters. Specifically, the maximum price filter was not being applied, which caused products outside the intended price range to appear in search results.
+# Root Cause:
+ After tracing the request from the frontend to the database layer, I realized that while the max price variable existed, it was not fully integrated into the MySQL ProductDao query. The SQL statement did not correctly account for the max price condition, and the prepared statement parameter count did not match the query’s placeholders.
+# Solution:
+ To resolve this, I updated the SQL query to explicitly include a max price condition that allowed optional filtering when no value was provided. I added the following logic to ensure the maximum price was properly applied:
+ 
+<img width="500" height="400" alt="line 28" src="https://github.com/user-attachments/assets/1c320170-c0cb-48f7-9913-78b9a3ba1b0b" />
+
+ 
+
+
+I then updated the prepared statement to correctly match all eight parameters required by the query, As you can see, once the SQL and prepared statement were aligned, the max price filter worked as expected and the search results became accurate :
+
+
+<img width="500" height="400" alt="all my tests pass!" src="https://github.com/user-attachments/assets/564ac9c5-3fa9-4d90-897c-843533bea8ce" />
+
+
+
+<img width="500" height="400" alt="maxPrice was not working" src="https://github.com/user-attachments/assets/d14fedfe-ea7b-4d92-ad98-92e1d7f72f7f" />
+
+
+
+
+
 # Bug 2: Product Update Duplication Issue
 To explain the bug that was causing my duplicate products, I'd like to break it up into three categories. What the problem was, the cause and solution. 
 # Problem:
@@ -38,22 +67,6 @@ To explain the bug that was causing my duplicate products, I'd like to break it 
  
 
 The picture above shows the format that I chose to write my query!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
