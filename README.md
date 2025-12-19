@@ -11,6 +11,16 @@ In addition to bug fixes, I made small improvements, such as updating the header
 # Personal Goals for This Capstone
 This capstone was incredibly different from our past capstones. We were able to view the front and backend of a website/application. We did not have a lot of practice with Insomnia in class so I was excited to see first hand how the tests ran. This turned out to be my biggest challenge. My goal was to get more familiar with the testing process and act as a detective to figure out a solution. 
 
+# Planning Process
+For my Capstone 3, I planned my work by breaking the instructions into smaller, clearer steps instead of trying to do everything at once. Seeing the whole project at once felt overwhelming, so separating it into phases helped me understand what needed to happen first and what could come later.
+
+I focused on one piece at a time when setting up the project, fixing bugs, then adding new features—which made the work feel more manageable and less stressful. Laying everything out visually also helped me stay organized and gave me confidence as I checked off each step. Overall, this approach made the project easier to understand and helped me move through it with more clarity and intention.
+
+<img width="512" height="699" alt="Screenshot 2025-12-19 at 8 49 48 AM" src="https://github.com/user-attachments/assets/7b1fc748-ec3c-4b36-904a-bc621f2cb570" />
+
+Above, I have attached a scan of my notebook. You can see that I broke up the large steps into smaller, manageable ones. This make it cleaer to see my objectives. (:
+
+
 
 # Phase 1: Core Setup & Category Functionality
 In Phase 1, I focused on understanding the existing codebase and completing the required category functionality. This included finishing the CategoriesController and implementing the MySqlCategoryDao to properly retrieve category data from the database.
