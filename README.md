@@ -2,7 +2,7 @@
 <img width="1435" height="82" alt="Screenshot 2025-12-18 at 8 39 38 PM" src="https://github.com/user-attachments/assets/d2dafc04-7a7f-46ce-a71e-3023834106b8" />
 
 
-# # Sunset Grocery App, an E-Commerce API
+#  Sunset Grocery App, an E-Commerce API
 
 # Objective:
 This capstone focused on debugging, as well as using MySQL and insomnia to test. We had to modify an existing e-commerce application so rather than building from scratch, I worked within an unfamiliar codebase to identify and fix issues with product searching, product updates causing duplication, and UI constraints like maximum values on the website.
