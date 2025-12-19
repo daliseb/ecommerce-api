@@ -34,7 +34,8 @@ Overall, this project changed how I approach problems. I’m more patient, more 
 # ✰✰✰✰HONORABLE MENTIONS/SOURCES ✰✰✰✰
 -The instructions that were given to us, all three workbooks were a huge help to me. I had them pulled up at all times. 
 -Workbook 9a was also a great help, W3 schools and my favorite place to get emojis (https://emojicombos.com/cute)
-As always, my classmates are always so knowledgeable and have always made me feel welcome, seen and heard. Whether they are there as a second set of eyes, a teacher, emotional support or for motivation, they have always been there for me. Even for something as small as to stay up late in the zoom and keep me company. 
+As always, my classmates are always so knowledgeable and have always made me feel welcome, seen and heard. Whether they are there as a second set of eyes, a teacher, emotional support or for motivation, they have always been there for me. Even for something as small as to stay up late in the zoom and keep me company.
+
 Thank you to:
 
 Hunbal, Muhammad, Mohammed, John, Shewitt, Margaret, Jaylen, Hignacio, Nisa and  Morgan 
