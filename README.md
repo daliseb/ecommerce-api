@@ -16,7 +16,7 @@ For my Capstone 3, I planned my work by breaking the instructions into smaller, 
 
 I focused on one piece at a time when setting up the project, fixing bugs, then adding new features—which made the work feel more manageable and less stressful. Laying everything out visually also helped me stay organized and gave me confidence as I checked off each step. Overall, this approach made the project easier to understand and helped me move through it with more clarity and intention.
 
-<img width="512" height="699" alt="Screenshot 2025-12-19 at 8 49 48 AM" src="https://github.com/user-attachments/assets/7b1fc748-ec3c-4b36-904a-bc621f2cb570" />
+<img width="500" height="400" alt="Screenshot 2025-12-19 at 8 49 48 AM" src="https://github.com/user-attachments/assets/7b1fc748-ec3c-4b36-904a-bc621f2cb570" />
 
 Above, I have attached a scan of my notebook. You can see that I broke up the large steps into smaller, manageable ones. This make it cleaer to see my objectives. (:
 
