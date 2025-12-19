@@ -24,8 +24,41 @@ One of the things that I found the most interesting was changing the color of th
 In the pictures above, I am showing where I modified the color of my logo/header. Its straight forward when you know where to look!
 
 
+# Bug 2: Product Update Duplication Issue
+To explain the bug that was causing my duplicate products, I'd like to break it up into three categories. What the problem was, the cause and solution. 
+# Problem:
+ When updating existing products, the application was creating duplicate product entries instead of modifying the original record. This caused repeated products to appear in the database and on the website. In my case, it was happening with the product Maple syrup and Jasmine rice. 
+# Root Cause:
+ After investigating the issue, I discovered that product updates were not correctly targeting existing records in the database. Instead of updating rows by their unique identifiers, new rows were being created, which led to duplicate products.
+# Solution:
+ To resolve this, I directly updated the affected records in MySQL by targeting each product’s unique product Id! Using UPDATE statements allowed me to correct duplicated entries and ensure that changes were applied to the intended products rather than creating new ones. I formatted and split up my queries to make it easier to spot the problem and for presentation purposes. To summarize, by updating records directly with WHERE product_id =I was able to eliminate duplicate entries and restore data integrity. 
+ 
+<img width="500" height="400" alt="fixing duplicates" src="https://github.com/user-attachments/assets/fbf83d83-9dd6-4ed0-90e0-3ee2299a2338" />
 
-Overall Capstone Experience
+ 
+
+The picture above shows the format that I chose to write my query!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Overall Capstone Experience
 This project helped me better understand how Spring Boot applications are structured, especially how controllers, services, and APIs work together to handle requests and return data. I also developed a stronger debugging mindset. Instead of guessing or changing things randomly, I learned to slow down, read error messages, trace data flow, and test small changes at a time. This made debugging feel more manageable and less overwhelming! I also felt less overwhelmed because I set aside time to plan, visually seeing my steps, helps IMMENSELY! 
 Because the codebase already existed, I had to spend time reading and understanding someone else’s code before making changes. I said the code out loud to myself when I didn't understand it, that process taught me how to navigate unfamiliar files and follow logic across multiple classes
 Overall, this project changed how I approach problems. I’m more patient, more intentional, and more confident in breaking issues down step by step. Rather than feeling stuck, I now see bugs as something I can work through with the right process.
