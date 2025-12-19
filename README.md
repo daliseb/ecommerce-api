@@ -31,7 +31,7 @@ Because the codebase already existed, I had to spend time reading and understand
 Overall, this project changed how I approach problems. I’m more patient, more intentional, and more confident in breaking issues down step by step. Rather than feeling stuck, I now see bugs as something I can work through with the right process.
 
 
-# ✰✰✰✰HONARABLE MENTIONS/SOURCES ✰✰✰✰
+# ✰✰✰✰HONORABLE MENTIONS/SOURCES ✰✰✰✰
 -The instructions that were given to us, all three workbooks were a huge help to me. I had them pulled up at all times. 
 -Workbook 9a was also a great help, W3 schools and my favorite place to get emojis (https://emojicombos.com/cute)
 As always, my classmates are always so knowledgeable and have always made me feel welcome, seen and heard. Whether they are there as a second set of eyes, a teacher, emotional support or for motivation, they have always been there for me. Even for something as small as to stay up late in the zoom and keep me company. 
