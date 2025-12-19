@@ -13,8 +13,13 @@ This capstone was incredibly different from our past capstones. We were able to 
 
 # Key Features & Improvements
 ---Frontend Enhancement ✎𓂃 ---
-Dynamic Header Color Update
 One of the things that I found the most interesting was changing the color of the website header and price. I decided to make this change because it pushed me to understand how the header was being styled and rendered within the project. I wanted to know “how”, I wanted to know where the color was coming from, I also wanted to personalize the website to feel more like something that I did. Especially since the code for this project was given to us. At first, it wasn’t obvious where the color was coming from, which required me to trace through the HTML structure and CSS rules rather than making assumptions. This change helped me better understand the project’s styling structure, including how CSS classes, layout positioning, and shared styles affect l components like the header. It also reinforced how the tiniest frontend changes often require careful navigation through multiple files, especially in an existing codebase! This was VERY cool!
+
+
+<img width="400" height="300" alt="changed the colors here" src="https://github.com/user-attachments/assets/17290de5-2856-442e-aa65-a6d5fda1b70b" />        
+
+
+<img width="500" height="400" alt="changed the color of my logo" src="https://github.com/user-attachments/assets/65933fe1-bce9-4de9-9296-48a46c1e008d" />
 
 
 
