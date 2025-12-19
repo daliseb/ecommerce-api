@@ -1,5 +1,5 @@
 
-<img width="1435" height="90" alt="Screenshot 2025-12-18 at 8 39 38 PM" src="https://github.com/user-attachments/assets/d2dafc04-7a7f-46ce-a71e-3023834106b8" />
+<img width="1500" height="100" alt="Screenshot 2025-12-18 at 8 39 38 PM" src="https://github.com/user-attachments/assets/d2dafc04-7a7f-46ce-a71e-3023834106b8" />
 
 
 #  Sunset Grocery App, an E-Commerce API
