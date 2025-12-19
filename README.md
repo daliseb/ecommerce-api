@@ -25,6 +25,21 @@ In the pictures above, I am showing where I modified the color of my logo/header
 
 
 
+Overall Capstone Experience
+This project helped me better understand how Spring Boot applications are structured, especially how controllers, services, and APIs work together to handle requests and return data. I also developed a stronger debugging mindset. Instead of guessing or changing things randomly, I learned to slow down, read error messages, trace data flow, and test small changes at a time. This made debugging feel more manageable and less overwhelming! I also felt less overwhelmed because I set aside time to plan, visually seeing my steps, helps IMMENSELY! 
+Because the codebase already existed, I had to spend time reading and understanding someone else’s code before making changes. I said the code out loud to myself when I didn't understand it, that process taught me how to navigate unfamiliar files and follow logic across multiple classes
+Overall, this project changed how I approach problems. I’m more patient, more intentional, and more confident in breaking issues down step by step. Rather than feeling stuck, I now see bugs as something I can work through with the right process.
+
+
+# ✰✰✰✰HONARABLE MENTIONS/SOURCES ✰✰✰✰
+-The instructions that were given to us, all three workbooks were a huge help to me. I had them pulled up at all times. 
+-Workbook 9a was also a great help, W3 schools and my favorite place to get emojis (https://emojicombos.com/cute)
+As always, my classmates are always so knowledgeable and have always made me feel welcome, seen and heard. Whether they are there as a second set of eyes, a teacher, emotional support or for motivation, they have always been there for me. Even for something as small as to stay up late in the zoom and keep me company. 
+Thank you to:
+Hunbal, Muhammad, Mohammed, John, Shewitt, Margaret, Jaylen, Hignacio, Nisa and  Morgan 
+# (˶ᵔ ᵕ ᵔ˶) ‹𝟹
+
+
 
 
 
