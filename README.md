@@ -21,7 +21,7 @@ One of the things that I found the most interesting was changing the color of th
 
 <img width="500" height="400" alt="changed the color of my logo" src="https://github.com/user-attachments/assets/65933fe1-bce9-4de9-9296-48a46c1e008d" />
 
-In the pictures above, I am showing where I modified the color of my logo/header. Its straight forward when you know wwhere to look!
+In the pictures above, I am showing where I modified the color of my logo/header. Its straight forward when you know where to look!
 
 
 
